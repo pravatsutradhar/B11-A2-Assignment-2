@@ -79,14 +79,41 @@ ul.nav-menu {
     justify-content: center;
 }
 
+.nav-menu li:last-child {
+	display: none;
+}
+
 
 ul.nav-menu li a {
+    color: var(--blue);
 	padding: 5px 15px;
 	display: block;
-	text-decoration: none;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 30px;
+}
+
+.nav-menu li:first-child a{
+	font-weight: 700;
+    color: var(--orange);
+}
+
+.nav-menu li:nth-child(3) a{
+    color: #05D4DF;
+}
+.nav-menu li:nth-child(4) a{
+    color: #5D58EF;
+}
+
+
+a.header-btn {
+    background-color: var(--orange);
+    padding: 10px 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    color: var(--white);
 }
 
 input#check {
@@ -96,23 +123,46 @@ input#check {
 
 @media (max-width: 1024px) {
 
+    .header-wrapper {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--orange);
+    }
+
     .container {
         max-width: 100%;
-        padding: 0 20px;
+        padding: 0 16px;
+    }
+
+    .flex-container {
+        min-height: 46px;
+    }
+
+    .logo-wrap a img {
+        width: 46px;
+        height: auto;
+    }
+
+    .logo-wrap a span {
+        display: none;
+    }
+
+    .header-btn-wrap {
+        display: none;
     }
     
     .menu-col {
         position: absolute;
         left: 0;
-        background-color: #ddd;
+        background-color: var(--white);
         width: 100%;
         top: 0;
         height: 0;
         overflow: hidden;
         transition: all .5s ease-in-out;
-        border-top: 1px solid #b3b3b3;
         z-index: -1;
     }
+
+    
     .menu-bar label {
         cursor: pointer;
         border: 1px solid #111111;
@@ -132,12 +182,40 @@ input#check {
         background: #111111;
         margin-bottom: 2px;
     }
+
     ul.nav-menu {
         flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    
+
+    .nav-menu li:nth-child(n+1) {
+        border-bottom: 1px solid #11111126;
+    }
+    .nav-menu li:last-child {
+        display: block;
+        border-bottom: none;
+    }
+    
+
+   .nav-menu li:last-child a {
+        background-color: var(--orange);
+        padding: 8px 45px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 12px;
+        font-weight: 600;
+        color: var(--white);
+        margin-left: 15px;
+        margin-top: 20px;
+        
     }
 
     .flex-container #check:checked ~ .menu-col {
         height: 100vh;
         top: 100%;
     }
+
+
 }

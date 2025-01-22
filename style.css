@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --orange: #FEA301;
@@ -451,3 +451,121 @@ input#check {
 
 
 /* Curriculum Section End */
+
+
+/* Story Section Start  */
+
+.stories-wrap {
+    padding: 60px 0;
+	background-image: url("../assets/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container-heading {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 58px;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.stories-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.fun-section {
+    background-color: var(--white);
+    border-radius: 16px;
+}
+
+.story-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 18px;
+}
+
+.story{
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+
+.story-content {
+    padding: 0 38px 38px 38px;
+    position: relative;
+}
+
+.fun-section-btn {
+	font-size: 16px;
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 14px 20px;
+	border-radius: 48px;
+	display: inline-block;
+	position: absolute;
+	top: -85px;
+}
+
+.fun-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    line-height: 38px;
+    margin: 60px 0 50px;
+}
+
+.fun-section-des {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #666666;
+    line-height: 1.8rem;
+    font-family: "Raleway", serif;
+}
+
+h3.story-title {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 44px;
+}
+
+.story-btn {
+	text-decoration: none;
+	background-color: #95B226;
+	color: var(--white);
+	padding: 14px 20px;
+	border-radius: 47px;
+	position: absolute;
+	top: -70px;
+}
+
+
+.view-all-story {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/* Footer Section Start  */
+
+.footer-wrap{
+    padding: 120px 0 170px;
+    background-color: #01ACFD;
+}
+
+.footer-container {
+    max-width: 1070px;
+    height: 222px;
+    margin: auto;
+}
+
+.footer-flex-container {
+	display: flex;
+	justify-content: space-between;
+	color: var(--white);
+}

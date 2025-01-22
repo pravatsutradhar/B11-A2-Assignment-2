@@ -338,7 +338,7 @@ input#check {
 	font-size: 3rem;
 	font-weight: bold;
 	line-height: 3.5rem;
-	color: var(--balck);
+	color: var(--black);
 	text-align: center;
 	margin-bottom: 70px;
 }
@@ -395,6 +395,59 @@ input#check {
 .middle{
     background-image: linear-gradient(#EEE1FF , #FFFFFF 40%);
 }
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.icon-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	background-color: var(--orange);
+	border-radius: 50%;
+	color: var(--white);
+}
+
+@media (max-width: 1024px) {
+
+    .curriculum-wrap {
+        padding: 40px 0;
+    }
+
+    .container-heading {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .curriculum-cards-flex {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .curriculum-card {
+        text-align: center;
+        border-radius: 13px;
+        padding: 36px 28px;
+    }
+
+    .curriculum-card .curriculum-card-title {
+        font-size: 18px;
+        margin: 22px 0;
+        line-height: 20px;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+}
+
 
 
 /* Curriculum Section End */
